@@ -98,6 +98,4 @@ private class AsyncSlotTask extends AsyncTask<ImageView, Integer, Boolean> {
         _Slotimg.setImageResource(_imgs[values[0]]);
     }
 }
-
 }
-
