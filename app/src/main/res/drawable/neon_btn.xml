@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item android:right="5dp" android:top="0dp">
+                <shape>
+                    <corners android:radius="50dp"/>
+
+                    <gradient
+                        android:centerX="70%"
+                        android:startColor="#fec5bb"
+                        android:centerColor="#fcd5ce"
+                        android:endColor="#fcd5ce"
+                        android:type="linear"/>
+                </shape>
+            </item>
+            <item android:bottom="5dp" android:left="6dp" android:right="10dp" android:top="5dp">
+                <shape android:shape="rectangle">
+                    <corners
+                        android:radius="50dp"/>
+
+                    <gradient
+                        android:angle="90"
+                        android:centerX="70%"
+                        android:centerColor="@android:color/transparent"
+                        android:startColor="@android:color/transparent"
+                        android:endColor="#f8edeb"
+                        android:type="linear"/>
+                    <size
+                        android:width="150dp"
+                        android:height="40dp"/>
+                </shape>
+            </item>
+            <!-- the glow for the half circles, possible with radius as well. I liked
+                 android:type="sweep" better because radius tends to fade out.-->
+            <item android:bottom="5dp" android:left="6dp" android:right="10dp" android:top="5dp">
+                <shape android:shape="rectangle" >
+                    <corners
+                        android:radius="50dp" />
+
+                    <gradient
+                        android:angle="360"
+                        android:centerX="5%"
+                        android:centerColor="#f8edeb"
+                        android:startColor="@android:color/transparent"
+                        android:endColor="@android:color/transparent"
+                        android:gradientRadius="360"
+                        android:type="sweep"
+                        />
+
+                    <size
+                        android:width="150dp"
+                        android:height="40dp" />
+                </shape>
+            </item>
+            <item android:bottom="5dp" android:left="6dp" android:right="10dp" android:top="5dp">
+                <shape android:shape="rectangle" >
+                    <corners
+                        android:radius="50dp" />
+
+                    <gradient
+                        android:angle="360"
+                        android:centerX="95%"
+                        android:centerColor="@android:color/transparent"
+                        android:startColor="#fae1dd"
+                        android:endColor="#f8edeb"
+                        android:gradientRadius="360"
+                        android:type="sweep" />
+
+                    <size
+                        android:width="150dp"
+                        android:height="40dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
