@@ -11,6 +11,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    // this is variable
     ImageView _Slot1,_Slot2,_Slot3;
     Button _btnStart;
     boolean isplay = false;
