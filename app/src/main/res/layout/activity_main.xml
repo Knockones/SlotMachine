@@ -21,10 +21,14 @@
         app:layout_constraintGuide_end="20dp" />
 
     <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:columnCount="3"
         android:useDefaultMargins="true"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -32,26 +36,33 @@
             android:id="@+id/idSlot1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/slotbar"
-            tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="59dp" />
+            android:contentDescription="@string/slotBar1"
+            app:srcCompat="@drawable/slotbar" />
 
         <ImageView
             android:id="@+id/idSlot2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/slotbar"
-            tools:layout_editor_absoluteX="184dp"
-            tools:layout_editor_absoluteY="59dp" />
+            android:contentDescription="@string/slotBar2"
+            app:srcCompat="@drawable/slotbar" />
 
         <ImageView
             android:id="@+id/idSlot3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/slotbar"
-            tools:layout_editor_absoluteX="277dp"
-            tools:layout_editor_absoluteY="53dp" />
-
+            android:contentDescription="@string/slotBar3"
+            app:srcCompat="@drawable/slotbar" />
     </GridLayout>
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/playBtn"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

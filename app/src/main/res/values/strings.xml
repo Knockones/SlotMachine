@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SlotMachine</string>
+    <string name="slotBar1">Slot Bar 1</string>
+    <string name="slotBar2">Slot Bar 2</string>
+    <string name="slotBar3">Slot Bar 3</string>
+    <string name="playBtn">Play</string>
 </resources>
